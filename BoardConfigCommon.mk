@@ -7,6 +7,7 @@
 COMMON_PATH := device/xiaomi/sm8150-common
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_DUP_RULES := true
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -89,7 +90,7 @@ BOARD_HAVE_QCOM_FM := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += nfc
